@@ -16,6 +16,12 @@
 		B01E09B329F23BB400012A92 /* MEALTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01E09B229F23BB400012A92 /* MEALTests.swift */; };
 		B01E09BD29F23BB400012A92 /* MEALUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01E09BC29F23BB400012A92 /* MEALUITests.swift */; };
 		B01E09BF29F23BB400012A92 /* MEALUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01E09BE29F23BB400012A92 /* MEALUITestsLaunchTests.swift */; };
+		B01E09CD29F23C7900012A92 /* NetworkKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01E09CC29F23C7900012A92 /* NetworkKit.swift */; };
+		B01E09CF29F23C9300012A92 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01E09CE29F23C9300012A92 /* Constant.swift */; };
+		B01E09D229F23CF800012A92 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01E09D129F23CF800012A92 /* DetailViewController.swift */; };
+		B01E09D529F23D1F00012A92 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01E09D429F23D1F00012A92 /* Meal.swift */; };
+		B01E09D729F23D4700012A92 /* MealDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01E09D629F23D4700012A92 /* MealDetail.swift */; };
+		B01E09DA29F23D7B00012A92 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01E09D929F23D7B00012A92 /* MealTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		B01E09B829F23BB400012A92 /* MEALUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEALUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B01E09BC29F23BB400012A92 /* MEALUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEALUITests.swift; sourceTree = "<group>"; };
 		B01E09BE29F23BB400012A92 /* MEALUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEALUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B01E09CC29F23C7900012A92 /* NetworkKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkKit.swift; sourceTree = "<group>"; };
+		B01E09CE29F23C9300012A92 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		B01E09D129F23CF800012A92 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B01E09D429F23D1F00012A92 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		B01E09D629F23D4700012A92 /* MealDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetail.swift; sourceTree = "<group>"; };
+		B01E09D929F23D7B00012A92 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +111,12 @@
 		B01E099A29F23BB300012A92 /* MEAL */ = {
 			isa = PBXGroup;
 			children = (
+				B01E09D829F23D5F00012A92 /* Views */,
+				B01E09D329F23D1100012A92 /* Models */,
+				B01E09D029F23CC400012A92 /* Controllers */,
+				B01E09CB29F23C5B00012A92 /* Utils */,
 				B01E099B29F23BB300012A92 /* AppDelegate.swift */,
 				B01E099D29F23BB300012A92 /* SceneDelegate.swift */,
-				B01E099F29F23BB300012A92 /* ViewController.swift */,
 				B01E09A129F23BB300012A92 /* Main.storyboard */,
 				B01E09A429F23BB400012A92 /* Assets.xcassets */,
 				B01E09A629F23BB400012A92 /* LaunchScreen.storyboard */,
@@ -125,6 +140,41 @@
 				B01E09BE29F23BB400012A92 /* MEALUITestsLaunchTests.swift */,
 			);
 			path = MEALUITests;
+			sourceTree = "<group>";
+		};
+		B01E09CB29F23C5B00012A92 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B01E09CC29F23C7900012A92 /* NetworkKit.swift */,
+				B01E09CE29F23C9300012A92 /* Constant.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B01E09D029F23CC400012A92 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B01E099F29F23BB300012A92 /* ViewController.swift */,
+				B01E09D129F23CF800012A92 /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B01E09D329F23D1100012A92 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B01E09D429F23D1F00012A92 /* Meal.swift */,
+				B01E09D629F23D4700012A92 /* MealDetail.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B01E09D829F23D5F00012A92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B01E09D929F23D7B00012A92 /* MealTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +309,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B01E09A029F23BB300012A92 /* ViewController.swift in Sources */,
+				B01E09CD29F23C7900012A92 /* NetworkKit.swift in Sources */,
+				B01E09D529F23D1F00012A92 /* Meal.swift in Sources */,
+				B01E09CF29F23C9300012A92 /* Constant.swift in Sources */,
+				B01E09D229F23CF800012A92 /* DetailViewController.swift in Sources */,
+				B01E09DA29F23D7B00012A92 /* MealTableViewCell.swift in Sources */,
+				B01E09D729F23D4700012A92 /* MealDetail.swift in Sources */,
 				B01E099C29F23BB300012A92 /* AppDelegate.swift in Sources */,
 				B01E099E29F23BB300012A92 /* SceneDelegate.swift in Sources */,
 			);
@@ -437,6 +493,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CMUSBSK2US;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MEAL/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -444,12 +501,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.meal.MEAL;
+				PRODUCT_BUNDLE_IDENTIFIER = com.meal.MEAL.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -464,6 +522,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CMUSBSK2US;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MEAL/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -471,12 +530,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.meal.MEAL;
+				PRODUCT_BUNDLE_IDENTIFIER = com.meal.MEAL.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
